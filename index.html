@@ -12,46 +12,48 @@
 
 <button onclick="
 
-const randomNUmber = Math.random();
+        const randomNUmber = Math.random();
 
-//how do we check that two comparison are both true
-//logical operator solution -> let us combine boolean values
-// && check the both comparison if true
-//branches means else if (create the other 2 branches)
+        //how do we check that two comparison are both true
+        //logical operator solution -> let us combine boolean values
+        // && check the both comparison if true
+        //branches means else if (create the other 2 branches)
 
-//accessible from all of this code inside the onClick attribute including inside the if statement
-//remember when we reassign a variable we have to switch from const to let
-    let computerMove = '';
+        //accessible from all of this code inside the onClick attribute including inside the if statement
+        //remember when we reassign a variable we have to switch from const to let
 
-if(randomNUmber >= 0 && randomNUmber < 1 / 3){
-    //first let save the computers move in a variable so we compare it
-    //console.log('Rock');
-     computerMove = 'Rock';
-}else if(randomNUmber >= 1 / 3 && randomNUmber < 2 / 3){
-    //console.log('Paper');
-    computerMove = 'Paper';
-}else if(randomNUmber >= 2 / 3 && randomNUmber < 1){
-    //console.log('Scissors');
-    computerMove = 'Scissor';
-}
+        let computerMove = '';
 
-console.log(computerMove);
+        if(randomNUmber >= 0 && randomNUmber < 1 / 3){
+            //first let save the computers move in a variable so we compare it
+            //console.log('Rock');
+             computerMove = 'Rock';
+        }else if(randomNUmber >= 1 / 3 && randomNUmber < 2 / 3){
+            //console.log('Paper');
+            computerMove = 'Paper';
+        }else if(randomNUmber >= 2 / 3 && randomNUmber < 1){
+            //console.log('Scissors');
+            computerMove = 'Scissor';
+        }
 
-//get the result and see who wins to this we use (if statement)
+        console.log(computerMove);
 
-let results = '';
+        //get the result and see who wins to this we use (if statement)
 
-if(computerMove === 'Rock'){
-   results = 'Tie';
-}else if(computerMove === 'Paper'){
-    results = 'You lose'
-}else if(computerMove === 'Scissor'){
-    results = 'You Win'
-}
+        let results = '';
 
-alert(`You picked Rock and Computer Picked ${computerMove}. ${results}`);
-//learn more logical operators
-//scope -> help us avoid naming conflicts
+        if(computerMove === 'Rock'){
+           results = 'Tie';
+        }else if(computerMove === 'Paper'){
+            results = 'You lose'
+        }else if(computerMove === 'Scissor'){
+            results = 'You Win'
+        }
+
+        alert(`You picked Rock and Computer Picked ${computerMove}. ${results}`);
+        //learn more logical operators
+        //scope -> help us avoid naming conflicts
+
 ">Rock</button>
 
 
@@ -59,8 +61,8 @@ alert(`You picked Rock and Computer Picked ${computerMove}. ${results}`);
 
 <button onclick="
 
-       const randomNUmber = Math.random();
-       let computerMove = '';
+        const randomNUmber = Math.random();
+        let computerMove = '';
 
         if(randomNUmber >= 0 && randomNUmber < 1 / 3){
 
@@ -93,17 +95,14 @@ alert(`You picked Rock and Computer Picked ${computerMove}. ${results}`);
 
 <button onclick="
 
-           const randomNUmber = Math.random();
-           let computerMove = '';
+        const randomNUmber = Math.random();
+        let computerMove = '';
 
         if(randomNUmber >= 0 && randomNUmber < 1 / 3){
-
              computerMove = 'Rock';
         }else if(randomNUmber >= 1 / 3 && randomNUmber < 2 / 3){
-
             computerMove = 'Paper';
         }else if(randomNUmber >= 2 / 3 && randomNUmber < 1){
-
             computerMove = 'Scissor';
         }
 
@@ -119,7 +118,6 @@ alert(`You picked Rock and Computer Picked ${computerMove}. ${results}`);
         }else if(computerMove === 'Scissor'){
             results = 'You tie'
         }
-
           alert(`You picked Scissor and Computer Picked ${computerMove}. ${results}`);
 
 ">Scissors</button>
