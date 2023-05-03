@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rockPaper</title>
+</head>
+<body>
+
+
+<h1>Rock Paper basic version</h1>
+
+<button onclick="
+
+const randomNUmber = Math.random();
+
+//how do we check that two comparison are both true
+//logical operator solution -> let us combine boolean values
+// && check the both comparison if true
+//branches means else if (create the other 2 branches)
+
+//accessible from all of this code inside the onClick attribute including inside the if statement
+//remember when we reassign a variable we have to switch from const to let
+    let computerMove = '';
+
+if(randomNUmber >= 0 && randomNUmber < 1 / 3){
+    //first let save the computers move in a variable so we compare it
+    //console.log('Rock');
+     computerMove = 'Rock';
+}else if(randomNUmber >= 1 / 3 && randomNUmber < 2 / 3){
+    //console.log('Paper');
+    computerMove = 'Paper';
+}else if(randomNUmber >= 2 / 3 && randomNUmber < 1){
+    //console.log('Scissors');
+    computerMove = 'Scissor';
+}
+
+console.log(computerMove);
+
+//get the result and see who wins to this we use (if statement)
+
+let results = '';
+
+if(computerMove === 'Rock'){
+   results = 'Tie';
+}else if(computerMove === 'Paper'){
+    results = 'You lose'
+}else if(computerMove === 'Scissor'){
+    results = 'You Win'
+}
+
+alert(`You picked Rock and Computer Picked ${computerMove}. ${results}`);
+//learn more logical operators
+//scope -> help us avoid naming conflicts
+">Rock</button>
+<button>Paper</button>
+<button>Scissors</button>
+</body>
+</html>
